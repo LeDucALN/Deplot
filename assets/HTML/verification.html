@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/login-logup.css">
+    <link rel="stylesheet" href="../CSS/pre-footer.css">
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>QUÊN MẬT KHẨU</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo-2T.png">
+</head>
+
+<body>
+    <header id="header">
+        <div class="desktop-header">
+            <div class="desktop-header-top">
+                <div class="inner">
+                    <div class="inner-left">
+                        <i class="fa-solid fa-house-chimney"></i>
+                        <p>Hệ thống showroom</p>
+                    </div>
+                    <div class="inner-right">
+                        <i class="fa-solid fa-phone-flip"></i>
+                        <p>Mua hàng online: 0865806009</p>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-header-center">
+                <div class="wrapper">
+                    <div class="inner">
+                        <div class="grid grid_flex">
+                            <div class="grid__item size-one">
+                                <h1>
+                                    <a href="/index.html">
+                                        <img src="../img/logo-2T.png" alt="logo" width="102px">
+                                    </a>
+                                </h1>
+                            </div>
+                            <div class="grid__item size-two">
+                                <div class="desktop-header-navbar">
+                                    <div class="inner">
+                                        <ul class="ul-navbar">
+                                            <li class="dropdown">
+                                                <a href="./allProduct.html">
+                                                    Sản phẩm
+                                                    <i class="fa-solid fa-chevron-down"></i>
+                                                </a>
+                                                <ul style="max-height: 320px;">
+                                                    <li><a href="./dam.html">Đầm</a></li>
+                                                    <li><a href="./aosomi.html">Áo sơ mi</a></li>
+                                                    <li><a href="">Áo phông</a></li>
+                                                    <li><a href="">Quần</a></li>
+                                                    <li><a href="">Chân váy</a></li>
+                                                    <li><a href="">Set bộ</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="./newProduct.html">Sản phẩm mới</a>
+                                            </li>
+                                            <li>
+                                                <a href="/">Xu hướng</a>
+                                            </li>
+                                            <li>
+                                                <a href="/">Về chúng tôi</a>
+                                            </li>
+                                            <li>
+                                                <a href="/">Liên hệ</a>
+                                            </li>
+                                            <li class="dropdown icon-item search-li float-pc">
+                                                <a href="/">
+                                                    <img src="../img/search.png" alt="search">
+                                                </a>
+                                                <ul class="no-bullets">
+                                                    <form action="" method="get" class="search-bar">
+                                                        <input id="inputSearch" type="search" name="search" value=""
+                                                            placeholder="Tìm kiếm..." class="input-group-filed">
+                                                        <button id="btnSearch" type="submit" class="btn">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                        </button>
+                                                    </form>
+                                                </ul>
+                                            </li>
+                                            <li class="float-pc">
+                                                <div class="desktop-cart-wrapper">
+                                                    <a href="./cart.html" style="padding: 0;">
+                                                        <img src="../img/cart.png" alt="cart">
+                                                        Giỏ hàng
+                                                        <span id="quantityCartItem" class="hd-cart-count">0</span>
+                                                    </a>
+                                                    <div class="quickview-cart">
+                                                        <ul class="no-bullets">
+                                                            <li>Bạn chưa có sản phẩm nào trong giỏ hàng!</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li id="account" class="dropdown icon-item search-li float-pc">
+                                                <a href="#">
+                                                    <img src="../img/account.png" alt="account">
+                                                    Tài khoản
+                                                </a>
+                                                <ul class="no-bullets" style="max-height: 106px;">
+                                                    <li><a href="./login.html">Đăng nhập</a></li>
+                                                    <li><a href="./register.html">Đăng ký</a></li>
+                                                </ul>
+                                            </li>
+
+                                            <li id="user-info" class="dropdown float-pc" style="display: none;">
+                                                Xin chào, <span id="user-name"></span>
+                                                <ul class="no-bullets" style="max-height: 161px;">
+                                                    <li><a href="#">Thông tin tài khoản</a></li>
+                                                    <li><a href="#">Lịch sử đơn hàng</a></li>
+                                                    <li><a href="#" id="logout">Đăng xuất</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="breadcrumb-wrapper">
+        <div class="breadcrumb-content">
+            <div class="wrapper">
+                <div class="inner text-left">
+                    <div class="breadcrumb-small">
+                        <a href="../../index.html">Trang chủ</a>
+                        <span>/</span>
+                        <a href="/assets/HTML/login.html">Tài Khoản</a>
+                        <span>/</span>
+                        <a href="/assets/HTML/forgotPassword.html">Quên Mật khẩu</a>
+                        <span>/</span>
+                        <span>Mã xác minh</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <form action="" method="POST" class="form1" id="form-login">
+            <h3 class="heading">Đặt lại mật khẩu</h3>
+
+            <div class="spacer"></div>
+
+            <div class="form-group">
+                <label for="email" class="form-label">Nhập mã xác nhận</label>
+                <input id="email" name="email" type="text" placeholder="Nhập mã xác nhận" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <button type="submit" class="form-submit" id="btn_next">Kế tiếp</button>
+        </form>
+
+    </div>
+    <div id="pre-footer">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="form">
+                    <div class="form-item">
+                        <div class="ft-subscribe">
+                            <div class="section-title">
+                                <h2>Đăng ký bản tin</h2>
+                                <p>Đăng ký nhận bản tin 2T STORE để được cập nhật những mẫu thiết kế mới nhất</p>
+                            </div>
+                            <div class="ft-sub-wrapper">
+                                <form action="" method="post">
+                                    <input type="email" name="" id="" placeholder="Vui lòng nhập email..." required>
+                                    <button type="submit">Đăng ký</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="ft-social">
+                            <a href="https://www.facebook.com/thanhnc279/" class="fb">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/congthanh_2709/" class="insta">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCKEusTzad6SCH-BijWm59rQ" class="youtube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-content">
+            <div class="wrapper">
+                <div class="inner">
+                    <div class="ft-contact">
+                        <h3 class="ft-title">2T STORE - THỜI TRANG CÔNG SỞ</h3>
+                        <div class="ft-contact-desc">
+                            Công ty TNHH 2T STORE
+                        </div>
+                        <div class="ft-contact-address">
+                            Địa chỉ: Số n, quận Thanh Xuân, Hà Nội
+                        </div>
+                        <div class="ft-contact-tel">
+                            Chăm sóc khách hàng: 0328849954
+                            <br>
+                            Mua hàng online: 0865806009
+                        </div>
+                        <div class="ft-contact-email">
+                            Email: thanhcong27092002@gmail.com
+                        </div>
+                    </div>
+                    <div class="ft-nav">
+                        <h3 class="ft-title"></h3>
+                        <ul>
+                            <li><a href="">Giới thiệu</a></li>
+                            <li><a href="">Triết lý kinh doanh tại 2T STORE</a></li>
+                            <li><a href="">2T STORE's Blog</a></li>
+                            <li><a href="">Hệ thống showroom</a></li>
+                            <li><a href="">Liên hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-nav">
+                        <h3 class="ft-title"></h3>
+                        <ul>
+                            <li><a href="">Chính sách giao nhận - Vận chuyển</a></li>
+                            <li><a href=""></a></li>
+                            <li><a href="">Tra cứu đơn hàng</a></li>
+                            <li><a href="">Hướng dẫn chọn Size</a></li>
+                            <li><a href="">Quy định đổi hàng</a></li>
+                            <li><a href="">Quy định bảo hành và sửa chữa</a></li>
+                            <li><a href="">Khách hàng thân thiết</a></li>
+                        </ul>
+                    </div>
+                    <div class="ft-nav">
+                        <h3 class="ft-title"></h3>
+                        <div class="ft-content">
+                            <p>Phương thức thanh toán</p>
+                            <div class="image-payment">
+                                <div class="item">
+                                    <a href="">
+                                        <img src="../img/image_method_3.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="bct">
+                                <a href="">
+                                    <img src="../img/bct.png" alt="" width="118px">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="designer">
+                Created by
+                <span>Nguyen Cong Thanh</span>
+                | all rights reserved
+            </div>
+        </div>
+    </footer>
+    <script>
+        const btnNext = document.getElementById("btn_next");
+        btnNext.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.assign('/assets/HTML/resetPassword.html');
+        })
+    </script>
+    <script type="module" src="../JS/utils/login.js"></script>
+    <script type="text/javascript" src="../JS/validate.js"></script>
+    <script>
+
+        // Mong muốn của chúng ta
+        Validator({
+            form: '#form-login',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message',
+            rules: [
+                Validator.isRequired('#email'),
+                Validator.isEmail('#email'),
+                Validator.minLength('#password', 6),
+                Validator.isRequired('#password_confirmation'),
+                Validator.isConfirm('#password_confirmation', function () {
+                    return document.querySelector('#form-login #password').value;
+                }, 'Mật khẩu nhập lại không chính xác'),
+            ],
+            onSubmit: function (data) {
+                console.log(data);
+            }
+        });
+    </script>
+    <script type="text/javascript" src="../JS/fix_header.js"></script>
+</body>
+
+</html>
